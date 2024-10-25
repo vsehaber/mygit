@@ -1,3 +1,3 @@
-myfun <- function(a, b){
+sum.fun <- function(a, b){
 a+b
 }
