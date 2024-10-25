@@ -1,0 +1,53 @@
+Enter the full path of the diretory where the executables (latex tex etc) of tex distrition are located
+C:\Users\Vanessa\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MiKTeX
+
+
+C:\Users\Vanessa\AppData\Local\Programs\MiKTeX\miktex\bin\x64
+
+
+
+
+Verifica a versão que está instalado
+git --version
+
+Pode ser aberto o git bash na própria pasta, usando o botão direito do mouse e selecionar git here
+git init 
+
+Arquivo está na área de stage e está aguardando para ser commitado
+git add meuarquivo.txt
+
+primeiro commit
+git commit -m "Primeiro commit"
+
+mudar master para main
+git branch -M "main"
+
+faz a conexão do repositório local (computador) com a pasta do github
+é feito apenas uma vez, quando está feita a conexão com o git hub
+git remote add origin https://github.com/vsehaber/mygit.git
+
+estou empurrando o arquivo commitado para a pasta do github
+git push -u origin main
+
+Vai abrir uma janela para fazer o login no git hub
+vai ser enviado um e-mail tbm. Ao fazer a atualização da página, já irá aparecer o arquivo commitado.
+
+vai colocar na área de stage todos os arquivos que serão comitados
+git add .
+git status
+
+envia para o git hub
+git push -u origin main
+
+Crio nova brunch que cria a nova função. Estou saindo da brunch atual que eu estou, 
+que é a main, e vou para o ramo da funcao-multiplica
+Toda e qualquer alteração será feita no ramo funcao-multiplica
+git checkout -b "funcao-multiplica"
+
+Quero voltar para o ramo principal
+git switch - ou git checkout -
+git switch main
+
+Quero ir para a branch "funcao-multiplica"
+git switch "funcao-multiplica"
+
